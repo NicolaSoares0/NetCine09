@@ -1,0 +1,9 @@
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+    background-color: #e9ecef;
+}
+
+.card-title {
+    min-height: 48px;
+}

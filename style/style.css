@@ -1,0 +1,15 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

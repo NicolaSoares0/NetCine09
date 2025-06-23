@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/5988394.png" type="image/x-icon">
+    <title>Filmes - Minha NetCine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style/cards.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="filmes.html"><i class="fas fa-film"></i> Minha NetCine</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="filmes.html">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="minha-lista.html">Minha Lista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usuarios.html">Usuários</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button id="logout-btn" class="btn btn-danger">Logout <i
+                                class="fas fa-sign-out-alt"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Gerenciar Usuários</h2>
+        <form id="user-form" class="mb-4">
+            <input type="hidden" id="user-id">
+            <div class="mb-3">
+                <label for="user-name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="user-name" required>
+            </div>
+            <div class="mb-3">
+                <label for="user-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="user-email" required>
+            </div>
+            <div class="mb-3">
+                <label for="user-password" class="form-label">Nova Senha</label>
+                <input type="password" class="form-control" id="user-password"
+                    placeholder="Deixe em branco para não alterar">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar Usuário</button>
+        </form>
+
+        <h3>Usuários Cadastrados</h3>
+        <ul id="user-list" class="list-group">
+        </ul>
+    </div>
+
+    <script src="jsp/storege.js"></script>
+    <script src="jsp/main.js"></script>
+    <script src="jsp/usuarios.js"></script>
+</body>
+
+</html>
